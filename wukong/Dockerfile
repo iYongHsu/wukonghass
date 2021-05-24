@@ -7,6 +7,7 @@ RUN pip3 install -r requirements.txt
 WORKDIR /root/.wukong/contrib
 RUN git pull -f
 RUN pip3 install -r requirements.txt
+RUN pip3 install spidev
 WORKDIR /root/wukong-robot
 EXPOSE 5000
 COPY run.sh /
