@@ -5,7 +5,7 @@ if [ ! -f "/root/.wukong/config.yml" ]; then
 fi
 if [ ! -f "/root/.wukong/wukong.pmdl" ]; then
   wget http://127.0.0.1:8899/share/wukongdata/xiaotianquan.pmdl
-  cp -f wukong.pmdl /root/.wukong/xiaotianquan.pmdl
+  cp -f xiaotianquan.pmdl /root/.wukong/xiaotianquan.pmdl
 fi
 # wget http://127.0.0.1:8899/share/wukongdata/config.yml
 # wget http://127.0.0.1:8899/share/wukongdata/wukong.pmdl
