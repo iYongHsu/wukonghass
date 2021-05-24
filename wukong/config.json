@@ -14,5 +14,5 @@
   "options": {},
   "schema": {},
   "audio": "true",
-  "gpio": "true"
+  "full_access": "true"
 }
