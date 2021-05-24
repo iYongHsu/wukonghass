@@ -13,6 +13,6 @@
   "boot": "auto",
   "options": {},
   "schema": {},
-  "audio": "true"
+  "audio": "true",
   "gpio": "true"
 }
