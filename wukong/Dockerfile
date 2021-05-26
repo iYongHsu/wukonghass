@@ -16,7 +16,7 @@ RUN git clone https://github.com/wzpan/wukong-robot.git
 RUN mkdir /root/.wukong
 WORKDIR /root/.wukong
 RUN git clone https://github.com/wzpan/wukong-contrib.git contrib
-RUN wget http://127.0.0.1:8899/share/wukongdata/_snowboydetect.so
+RUN wget http://192.168.1.120:8899/share/wukongdata/_snowboydetect.so
 RUN apt-get install -y portaudio19-dev pulseaudio libsox-fmt-all ffmpeg emacs libatlas-base-dev
 WORKDIR /root/wukong-robot/snowboy/
 WORKDIR /root/wukong-robot
