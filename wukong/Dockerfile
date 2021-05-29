@@ -8,7 +8,7 @@ RUN sed -i 's/deb.debian.org/mirrors.aliyun.com/g' /etc/apt/sources.list
 RUN apt-get update
 RUN apt-get install -y wget git python-pyaudio python3-pyaudio sox && apt-get clean && rm -rf /var/lib/apt/lists/*
 RUN apt-get update
-RUN apt-get install -y build-essential python3-dev
+RUN apt-get install -y build-essential python3-dev procps
 WORKDIR /root/
 RUN wget https://bootstrap.pypa.io/get-pip.py --no-check-certificate
 RUN python3 get-pip.py
