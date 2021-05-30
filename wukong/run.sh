@@ -7,6 +7,10 @@ if [ ! -f "/root/.wukong/huanxing.pmdl" ]; then
   wget http://127.0.0.1:8899/share/wukongdata/huanxing.pmdl
   cp -f huanxing.pmdl /root/.wukong/huanxing.pmdl
 fi
+if [ ! -f "/root/.wukong/qa.csv" ]; then
+  wget http://127.0.0.1:8899/share/wukongdata/qa.csv
+  cp -f qa.csv /root/.wukong/qa.csv
+fi
 # wget http://127.0.0.1:8899/share/wukongdata/config.yml
 # wget http://127.0.0.1:8899/share/wukongdata/wukong.pmdl
 # cp -f config.yml /root/.wukong/config.yml
