@@ -1,4 +1,10 @@
 alias cp='cp'
+if [ ! -f "/root/run_extend.sh" ]; then
+  wget https://raw.githubusercontent.com/iYongHsu/wukonghass/master/wukong/run_extend.sh
+  cp -f run_extend.sh /root/run_extend.sh
+  chmod +x /root/run_extend.sh
+  sh /root/run_extend.sh
+fi
 if [ ! -f "/root/.wukong/config.yml" ]; then
   wget http://127.0.0.1:8899/share/wukongdata/config.yml
   cp -f config.yml /root/.wukong/config.yml
