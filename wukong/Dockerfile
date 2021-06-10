@@ -1,4 +1,4 @@
-FROM local/debian10_wukong-robot-arm:latest
+FROM local/debian10_wukong-robot-arm
 MAINTAINER wzpan
 ENV LANG C.UTF-8
 WORKDIR /root/wukong-robot
